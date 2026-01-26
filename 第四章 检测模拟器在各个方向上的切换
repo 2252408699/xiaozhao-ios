@@ -1,0 +1,43 @@
+# 📱 iOS 检测模拟器在各个方向上的切换
+
+
+```swift
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // 捕捉设备方向变化
+        NotificationCenter.default.addObserver(self, selector:
+            #selector(ViewController.orientationChanged(_:)), name:
+                                            UIDevice.orientationDidChangeNotification, object: nil)
+    }
+    
+    @objc func orientationChanged(_ notification:Notification){
+        let deivce = UIDevice.current // 获取当前运行中的设备
+        switch deivce.orientation {
+            case .portrait:
+                print(" --- 屏幕直立")
+            case .portraitUpsideDown:
+                print(" --- 屏幕直立,上下颠倒")
+            case .landscapeLeft:
+                    print(" --- 横向且屏幕在左侧")
+            case .landscapeRight:
+                    print(" --- 横向且屏幕在右侧")
+            case .faceUp:
+                    print(" --- 屏幕面朝上")
+            case .faceDown:
+                    print(" --- 屏幕面朝下")
+            case .unknown:
+                    print(" --- 无法获取")
+            @unknown default:
+                print(" --- 无法获取1")
+        }
+    }
+
+}
+
+
+```
