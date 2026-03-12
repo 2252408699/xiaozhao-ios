@@ -45,3 +45,8 @@ task.resume()
 *斜体*
 **粗体**
 ***粗斜体***
+
+
+- cd 你的项目路径
+- git commit -m "提交说明"
+- git push origin main
