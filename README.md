@@ -48,5 +48,6 @@ task.resume()
 
 
 - cd 你的项目路径
+- git add .   # 添加所有修改/新增文件
 - git commit -m "提交说明"
 - git push origin main

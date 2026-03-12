@@ -1,0 +1,7 @@
+# 📱 iOS 其他(快捷键)
+
+- command+shift+o 打开 open Quickly 查找文件
+
+- Editor->Refactor->Extract to Method  将代码提取为方法
+
+![将代码提取为方法](images/将代码提取为方法.png) 
