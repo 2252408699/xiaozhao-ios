@@ -166,6 +166,9 @@ override func viewDidLoad() {
 - tag值需唯一，避免多个视图使用相同tag，导致查找错误。
 
 - _ sender:UIButton!  
+
 1. _ 是 Swift 中的 省略外部参数名 的符号，作用是：调用这个方法时，不需要写参数名，直接传入参数即可。
+
 2. sender：参数名（自定义，可修改）
+
 3. UIButton!：参数类型 + 隐式解包可选型
